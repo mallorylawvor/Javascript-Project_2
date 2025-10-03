@@ -141,7 +141,7 @@ document.getElementById("demo").innerHTML = break_statement;
 let cont_statement
 for (let i = 1; i < 10; i++) {
     if (i === 3) { continue; }
-    text += i * 10 + "<br>";
+    text += i * 10 + ("<br>");
 }
-douument.getElementById("contiue").innerHTML = cont_statement;
-// contiue statement 
+douument.getElementById("contiune").innerHTML = cont_statement;
+//continue statement 
