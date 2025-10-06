@@ -127,7 +127,7 @@ let mycar_Function(){
     model: "Viper ";
     year: "2021 ";
     color: "red ";
-    description: Functin() {
+    description: Function() {
         return "The car is a " + this.year + this.color + this.make + this.model;
     }
 }
