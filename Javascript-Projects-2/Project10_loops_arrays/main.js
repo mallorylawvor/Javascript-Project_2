@@ -21,8 +21,9 @@ function count_To_Ten() {
 function Call_Loop() {
     {
         var X = 0;
-        X <= 4;
-        X++
+        while (X <= 4); {
+            X++;
+        }
     }
     if (X === 4) {
         Loop = "You may go home now.";
@@ -30,12 +31,12 @@ function Call_Loop() {
     else {
         Loop = " You must keep working.";
     }
-
+    document.getElementById("Loop").innerHTML = Loop;
 }
 //creating a loop that adds 1 everytime loop excutes until it reaches 4
 
 function string_Length() {
-    var X = "Hello Sunshine.";
+    var Text = "Hello Sunshine.";
     var length = Text.length;
     document.getElementById("day").innerHTML = length;
 }
@@ -48,7 +49,7 @@ function for_Loop() {
     for (Y = 0; Y < Instruments.length; Y++) {
         Content += Instruments[Y] + "<br>";
     }
-    douument.getElementById("List_of_Instruments").innerHTML = Content;
+    document.getElementById("List_of_Instruments").innerHTML = Content;
 }
 // "for loops"
 
@@ -68,7 +69,7 @@ function array_Function() {
     Array_1[1] = "Afternoon";
     Array_1[2] = "Evening";
     Array_1[3] = "Midnight";
-    douument.getElementById("Array").innerHTML = "The day starts in the " + Array_1[0] + ".";
+    document.getElementById("Array").innerHTML = "The day starts in the " + Array_1[0] + ".";
 }
 //my array 
 
@@ -112,28 +113,31 @@ document.write(X);
 document.write("<br>" + X);
 // output = 82,33,33
 
+
+
+
 function myPi_Function() {
     return Math.PI;
-    document.getElementById(myPi).innerHTML = myPi_Function();
+    document.getElementById("myPi").innerHTML = Math.PI;
 }
 //return statements
 
-let car = {
-    make: "Dodge ",
-    model: "Viper ",
-    year: "2021 ",
-    color: "red ",
-    description: function () {
+let mycar_Function(){
+    make: "Dodge ";
+    model: "Viper ";
+    year: "2021 ";
+    color: "red ";
+    description: Functin() {
         return "The car is a " + this.year + this.color + this.make + this.model;
     }
 }
-document.getElementById("Car_Object").innerHTML = car.description();
+document.getElementById("Car").innerHTML = mycar_Function().description();
 //object
 
 let break_statement = "";
 for (let i = 0; i < 10; i++) {
     if (i === 3) { break; }
-    break_statement += "the nimber is " + i + "<br>";
+    break_statement += "the number is " + i + ("<br>");
 }
 document.getElementById("demo").innerHTML = break_statement;
 //break statement
@@ -141,7 +145,7 @@ document.getElementById("demo").innerHTML = break_statement;
 let cont_statement
 for (let i = 1; i < 10; i++) {
     if (i === 3) { continue; }
-    text += i * 10 + ("<br>");
+    text += i * 10 + "<br>";
 }
-douument.getElementById("contiune").innerHTML = cont_statement;
-//continue statement 
+document.getElementById("continue").innerHTML = cont_statement;
+// contniue statement 
